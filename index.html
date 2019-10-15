@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack</title>
+</head>
+<body>
+
+<div data-gameId="blackjack">
+</div>
+
+
+<script src="js/blackjack/card.js"></script>
+<script src="js/blackjack/deck.js"></script>
+<script src="js/blackjack/constants.js"></script>
+<script src="js/blackjack/blackjack.js"></script>
+<script src="js/core/helper.js"></script>
+<script src="js/core/game-engine.js"></script>
+
+<script>
+    let gameEngine = new GameEngine(new Blackjack());
+    gameEngine.run();
+</script>
+</body>
+</html>
